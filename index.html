@@ -27,7 +27,16 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
 
 		<script type="text/babel">
-			ReactDOM.render(<h1>Daniel Silva</h1>, document.getElementById('app'));
+			const Title = React.createClass({
+				render: () => {
+					return (
+						<h1>
+							<small>Hello World</small>
+						</h1>
+					)
+				}
+			})
+			ReactDOM.render(<Title/>, document.getElementById('app'));
 		</script>
 	</body>
 </html>
